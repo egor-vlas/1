@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/2298ec81c4.js" crossorigin="anonymous"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,900;1,300;1,400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+	<title>PARTY IN MY PANTRY</title>
+</head>
+<body>
+
+	
+		<nav>
+			<input id="nav-toggle" type="checkbox">
+			<div class="social">
+				<p class="social_icon instagram"><i class="fab fa-instagram"></i></p>
+				<p class="social_icon facebook"><i class="fab fa-facebook"></i></p>
+			</div>
+			<ul class="links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#feedback">Feedback</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+			<label for="nav-toggle" class="icon-burger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</label>
+		</nav>		
+	
+	<div class="hero" id="parallax">
+			
+		<img src="/assets/logo5.png" alt="" srcset="">
+	</div>
+
+	<div class="services_wrapper"> 
+		<div class="services" id="services">
+			<div class="services_items first">services</div>
+			<div class="services_items second">grazing boxes</div>
+			<div class="services_items third">grazing tables</div>
+			<div class="services_items four">mobile catering</div>
+			<div class="services_items five">party hire</div>
+			<div class="services_items six">event photography</div>
+		</div>
+	</div> 
+
+	<div class="feedback">
+		<h3>Feedback</h3>
+		<div class="feedbacks" id="feedback">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In numquam atque odio voluptas nam! Odit odio sequi voluptatem reiciendis laudantium.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil corrupti excepturi amet pariatur fuga atque sunt a dolorem itaque architecto, quibusdam placeat perferendis praesentium ex, debitis temporibus quae. Deserunt.</p>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur aut neque numquam, harum impedit inventore ad soluta. Tempore magni velit veritatis sed necessitatibus quia!</p>
+		</div>
+	</div>
+
+	<div class="gallery">
+		<h3>Our Instagram</h3>
+	</div>
+	
+	
+
+	<div class="grid_wrapper">
+		
+	</div>
+
+
+	<div class="contact" id="contact">
+		<h3>contact us</h3>
+		<div class="contact_wrapper">
+			<div class="contact_items">
+				<i class="fas fa-mobile-alt"></i>
+				<p>0415634733</p>				
+			</div>
+			<div class="contact_items">
+				<i class="fas fa-mobile-alt"></i>
+				<p>012345678</p>				
+			</div>
+			<div class="contact_items">
+				<i class="far fa-envelope"></i>
+				<p>thepartyinmypantry@gmail.com</p>
+			</div>
+		</div>		
+	</div>
+	<footer>
+		<p>Copy rights and s$%&..</p>
+	</footer>
+	
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+		integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		var counter = 1;
+		setInterval(function(){
+			document.getElementById('radio' + counter).checked = true;
+			counter++;
+			if(counter > 4){
+				counter = 1;
+			}
+		}, 5000);
+
+		// parallax effect
+		const parallax = document.getElementById("parallax");
+		window.addEventListener("scroll", function(){
+			let offset = window.pageYOffset;
+			parallax.style.backgroundPositionY = offset * 0.7 +"px";
+		})
+	</script>
+	
+</body>
+</html>
